@@ -155,13 +155,19 @@ export default {
       if (!section) return;
 
       const rect = section.getBoundingClientRect();
-      const isInView = rect.top < window.innerHeight * 0.7;
+      const windowHeight = window.innerHeight;
+      const isInView =
+        rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3;
 
       if (isInView) {
         infoVisible.value = true;
         setTimeout(() => {
           formVisible.value = true;
         }, 200);
+      } else {
+        // Reset animations when out of view
+        infoVisible.value = false;
+        formVisible.value = false;
       }
     };
 

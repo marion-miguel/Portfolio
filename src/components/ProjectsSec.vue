@@ -38,7 +38,7 @@
 
 <script>
 import { ref, computed, onMounted, onUnmounted, watch } from "vue";
-import { PROJECTS } from "src/data/constants.js";
+import portfolioData from "src/data/portfolio-data.json";
 import TiltCard from "src/components/TiltCard.vue";
 import ProjectModal from "src/components/ProjectModal.vue";
 
@@ -58,10 +58,11 @@ export default {
     const visibleProjects = ref({});
 
     const filteredProjects = computed(() => {
+      const projects = portfolioData.ProjectsSection.projects || [];
       if (activeFilter.value === "ALL") {
-        return PROJECTS;
+        return projects;
       }
-      return PROJECTS.filter((p) => p.category === activeFilter.value);
+      return projects.filter((p) => p.category === activeFilter.value);
     });
 
     const handleScroll = () => {
@@ -69,7 +70,9 @@ export default {
       if (!section) return;
 
       const rect = section.getBoundingClientRect();
-      const isInView = rect.top < window.innerHeight * 0.7;
+      const windowHeight = window.innerHeight;
+      const isInView =
+        rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3;
 
       if (isInView) {
         headerVisible.value = true;
@@ -78,6 +81,10 @@ export default {
             visibleProjects.value[idx] = true;
           }, idx * 100);
         });
+      } else {
+        // Reset animations when out of view
+        headerVisible.value = false;
+        visibleProjects.value = {};
       }
     };
 
@@ -85,6 +92,15 @@ export default {
       if (newProject && newProject.accentColor) {
         emit("accent-change", newProject.accentColor);
       }
+    });
+
+    watch(activeFilter, () => {
+      // Reset project animations when filter changes
+      visibleProjects.value = {};
+      // Retrigger scroll check to animate new filtered projects
+      setTimeout(() => {
+        handleScroll();
+      }, 50);
     });
 
     onMounted(() => {

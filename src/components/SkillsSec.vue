@@ -29,9 +29,7 @@
           <span class="skill-index">{{ skill.index }}</span>
           <div class="skill-icon">{{ skill.icon }}</div>
           <h3 class="skill-name">{{ skill.name }}</h3>
-          <div class="skill-dots">
-            <div v-for="dot in 5" :key="dot" class="dot"></div>
-          </div>
+
           <div class="skill-accent"></div>
         </div>
       </div>
@@ -41,7 +39,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted, computed } from "vue";
-import { SKILLS } from "src/data/constants.js";
+import portfolioData from "src/data/portfolio-data.json";
 
 export default {
   name: "SkillsSec",
@@ -57,32 +55,46 @@ export default {
       { label: "Other Skills", value: "other" },
     ];
 
-    const skillsWithCategories = SKILLS.map((skill) => ({
-      ...skill,
-      category: getSkillCategory(skill.name),
-    }));
+    const skillsData = computed(() => {
+      const skills = portfolioData.AboutSection.skills;
+      const allSkills = [
+        ...skills.development.map((name) => ({
+          name,
+          category: "development",
+          level: 85,
+          icon: "💻",
+        })),
+        ...skills.design.map((name) => ({
+          name,
+          category: "design",
+          level: 80,
+          icon: "🎨",
+        })),
+        ...skills.other.map((name) => ({
+          name,
+          category: "other",
+          level: 75,
+          icon: "⚡",
+        })),
+      ];
+      return allSkills.map((skill, index) => ({
+        ...skill,
+        index: String(index + 1).padStart(2, "0"),
+      }));
+    });
+
+    const skillsWithCategories = skillsData;
 
     function getSkillCategory(skillName) {
-      const developmentSkills = [
-        "React / Next.js",
-        "TypeScript",
-        "Node.js",
-        "Three.js / WebGL",
-      ];
-      const designSkills = ["UI/UX Design"];
-
-      if (developmentSkills.some((dev) => skillName.includes(dev)))
-        return "development";
-      if (designSkills.some((design) => skillName.includes(design)))
-        return "design";
-      return "other";
+      const skill = skillsData.value.find((s) => s.name === skillName);
+      return skill ? skill.category : "other";
     }
 
     const filteredSkills = computed(() => {
       if (activeCategory.value === "all") {
-        return skillsWithCategories;
+        return skillsWithCategories.value;
       }
-      return skillsWithCategories.filter(
+      return skillsWithCategories.value.filter(
         (skill) => skill.category === activeCategory.value
       );
     });
@@ -105,7 +117,9 @@ export default {
       if (!section) return;
 
       const rect = section.getBoundingClientRect();
-      const isInView = rect.top < window.innerHeight * 0.7;
+      const windowHeight = window.innerHeight;
+      const isInView =
+        rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3;
 
       if (isInView) {
         headerVisible.value = true;
@@ -114,6 +128,10 @@ export default {
             visibleCards.value[idx] = true;
           }, idx * 50);
         });
+      } else {
+        // Reset animations when out of view
+        headerVisible.value = false;
+        visibleCards.value = {};
       }
     };
 
@@ -127,7 +145,7 @@ export default {
     });
 
     return {
-      SKILLS,
+      skillsData,
       headerVisible,
       visibleCards,
       activeCategory,
@@ -269,8 +287,8 @@ export default {
 
 .skill-card {
   position: relative;
-  min-height: 220px;
-  padding: 2.5rem;
+  min-height: 200px;
+  padding: 1.5rem 0.5rem;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(21, 38, 59, 0.05);
   border-radius: 2.5rem;
@@ -315,10 +333,6 @@ export default {
     .skill-name {
       color: #2dd4bf;
     }
-
-    .skill-dots {
-      opacity: 1;
-    }
   }
 }
 
@@ -350,22 +364,6 @@ export default {
   line-height: 1.3;
   transition: color 0.7s;
 }
-
-.skill-dots {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 0.5rem;
-  opacity: 0;
-  transition: opacity 0.7s;
-
-  .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #2dd4bf;
-  }
-}
-
 .skill-accent {
   position: absolute;
   top: 0;

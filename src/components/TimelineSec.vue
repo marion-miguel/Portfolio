@@ -80,8 +80,8 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, onUnmounted } from "vue";
-import { TIMELINE } from "src/data/constants.js";
+import { ref, computed, onMounted, onUnmounted, watch } from "vue";
+import portfolioData from "src/data/portfolio-data.json";
 
 export default {
   name: "TimelineSec",
@@ -93,7 +93,25 @@ export default {
     const scrollProgress = ref(0);
 
     const filteredItems = computed(() => {
-      return TIMELINE.filter((item) => item.type === activeTab.value);
+      if (activeTab.value === "Work") {
+        return portfolioData.ResumeSection.experience.map((item, index) => ({
+          ...item,
+          id: `work-${index}`,
+          type: "Work",
+          title: item.position,
+          organization: item.company,
+          period: item.year,
+        }));
+      } else {
+        return portfolioData.ResumeSection.education.map((item, index) => ({
+          ...item,
+          id: `edu-${index}`,
+          type: "Education",
+          title: item.degree,
+          organization: item.institution,
+          period: item.year,
+        }));
+      }
     });
 
     const handleScroll = () => {
@@ -102,9 +120,18 @@ export default {
       const rect = sectionRef.value.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      // Check if section is in view
-      if (rect.top < windowHeight * 0.8) {
+      // Check if section is in view (with some buffer for smoother transitions)
+      const isInView =
+        rect.top < windowHeight * 0.8 && rect.bottom > windowHeight * 0.2;
+
+      if (isInView) {
         headerVisible.value = true;
+      } else {
+        // Reset animations when out of view
+        headerVisible.value = false;
+        visibleItems.value = {};
+        scrollProgress.value = 0;
+        return;
       }
 
       // Calculate scroll progress within the section
@@ -135,6 +162,16 @@ export default {
 
     onUnmounted(() => {
       window.removeEventListener("scroll", handleScroll);
+    });
+
+    // Reset timeline animations when tab changes
+    watch(activeTab, () => {
+      visibleItems.value = {};
+      scrollProgress.value = 0;
+      // Retrigger scroll check to animate new timeline items
+      setTimeout(() => {
+        handleScroll();
+      }, 50);
     });
 
     return {

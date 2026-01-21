@@ -1,0 +1,382 @@
+{
+  "AboutSection": {
+    "name": "AboutSection",
+    "description": "Crafting digital experiences with passion and precision. Web designer and front-end developer with over a year of experience, focused on user experience and modern web technologies.",
+    "features": [
+      {
+        "title": "Design",
+        "description": "Creating intuitive, user-centered designs that tell a story"
+      },
+      {
+        "title": "Clean Code",
+        "description": "Writing maintainable, performant code following best practices"
+      },
+      {
+        "title": "Performance",
+        "description": "Optimizing for SEO, accessibility, and user experience"
+      }
+    ],
+    "stats": [
+      { "label": "Years Experience", "value": "1+" },
+      { "label": "Projects Completed", "value": "18+" }
+    ],
+    "skills": {
+      "development": [
+        "HTML 5",
+        "Rest API",
+        "CSS/ SCSS",
+        "Tailwind",
+        "Bootstrap",
+        "JavaScript",
+        "Vue.js",
+        "Typescript",
+        "Quasar Framework",
+        "Mysql",
+        "SQL",
+        "Navicat",
+        "POSTGRESQL"
+      ],
+      "design": [
+        "Figma",
+        "Adobe Illustrator",
+        "UI/UX Principles",
+        "Caricature/ Drawing"
+      ],
+      "other": [
+        "Git/GitHub",
+        "Responsive Design",
+        "Performance Optimization",
+        "SEO Basics",
+        "Mobile App",
+        "Software App",
+        "Concept Web Creator",
+        "Web Designer",
+        "Quality Assurance Tester"
+      ]
+    }
+  },
+  "ContactSection": {
+    "name": "ContactSection",
+    "email": "miguelmarionray@gmail.com",
+    "location": "Tarlac City, Philippines",
+    "phone": "0977-120-9763",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com",
+      "twitter": "https://twitter.com"
+    }
+  },
+  "HomeSection": {
+    "name": "HomeSection",
+    "badge": "Available for projects",
+    "title": "Creating digital experiences that inspire",
+    "description": "Web designer & front-end developer passionate about crafting modern, user-centered digital solutions with clean code and beautiful interfaces.",
+    "stats": [
+      { "label": "Years Exp.", "value": "1+" },
+      { "label": "Projects", "value": "18+" }
+    ],
+    "actions": [
+      { "label": "View My Work", "section": "portfolio" },
+      { "label": "Let's Talk", "section": "contact" }
+    ]
+  },
+  "ProjectsSection": {
+    "name": "ProjectsSection",
+    "description": "Featured projects showcasing skills in modern web development.",
+    "projects": [
+      {
+        "id": "1",
+        "title": "HRIS Launcher",
+        "description": "A comprehensive Human Resource Information System with advanced features for employee management, payroll, attendance tracking, and analytics.",
+        "fullDescription": "HRIS Launcher is a comprehensive Human Resource Information System with advanced features for employee management, payroll, attendance tracking, and analytics. Built with Vue.js and Quasar Framework for optimal performance.",
+        "tech": ["Vue.js", "Quasar", "REST API"],
+        "tags": ["Vue.js", "Quasar", "REST API"],
+        "image": "https://picsum.photos/seed/hris1/600/400",
+        "images": [
+          "https://picsum.photos/seed/hris1/1200/800",
+          "https://picsum.photos/seed/hris2/1200/800",
+          "https://picsum.photos/seed/hris3/1200/800"
+        ],
+        "liveUrl": "https://itbs.solutions",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "6 weeks",
+        "client": "ITBS Solutions",
+        "year": "2024",
+        "accentColor": "#667eea"
+      },
+      {
+        "id": "2",
+        "title": "ITBS Solutions",
+        "description": "Company website with interactive interface and service showcase, featuring integration with various business tools and CMS capabilities.",
+        "fullDescription": "ITBS Solutions company website with interactive interface and service showcase, featuring integration with various business tools and CMS capabilities. Modern responsive design built with Vue.js.",
+        "tech": ["Vue.js", "Quasar", "Firebase"],
+        "tags": ["Vue.js", "Quasar", "Firebase"],
+        "image": "https://picsum.photos/seed/itbs1/600/400",
+        "images": [
+          "https://picsum.photos/seed/itbs1/1200/800",
+          "https://picsum.photos/seed/itbs2/1200/800"
+        ],
+        "liveUrl": "https://itbs.solutions",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "4 weeks",
+        "client": "ITBS Corporation",
+        "year": "2024",
+        "accentColor": "#00f2fe"
+      },
+      {
+        "id": "3",
+        "title": "Kiosk Landing Page",
+        "description": "Interactive kiosk interface designed for public spaces with touch functionality, user-friendly navigation, and information display.",
+        "fullDescription": "Interactive kiosk interface designed for public spaces with touch functionality, user-friendly navigation, and information display. Optimized for public use with intuitive touch interactions.",
+        "tech": ["Vue.js", "Quasar", "HTML5"],
+        "tags": ["Vue.js", "Quasar", "HTML5"],
+        "image": "https://picsum.photos/seed/kiosk1/600/400",
+        "images": [
+          "https://picsum.photos/seed/kiosk1/1200/800",
+          "https://picsum.photos/seed/kiosk2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "3 weeks",
+        "client": "Government Agency",
+        "year": "2024",
+        "accentColor": "#764ba2"
+      },
+      {
+        "id": "4",
+        "title": "LWUA Landing Page",
+        "description": "Modern landing page for Local Water Utilities Administration with service information, interactive elements, and responsive design.",
+        "fullDescription": "Modern landing page for Local Water Utilities Administration with service information, interactive elements, and responsive design. Built to showcase government services effectively.",
+        "tech": ["Vue.js", "Quasar", "Responsive Design"],
+        "tags": ["Vue.js", "Quasar", "Responsive Design"],
+        "image": "https://picsum.photos/seed/lwua1/600/400",
+        "images": [
+          "https://picsum.photos/seed/lwua1/1200/800",
+          "https://picsum.photos/seed/lwua2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "2 weeks",
+        "client": "LWUA",
+        "year": "2024",
+        "accentColor": "#f5576c"
+      },
+      {
+        "id": "5",
+        "title": "NLEX Landing Page",
+        "description": "High-performance landing page for North Luzon Expressway with traffic updates, toll information, and interactive map integration.",
+        "fullDescription": "High-performance landing page for North Luzon Expressway with traffic updates, toll information, and interactive map integration. Features real-time traffic data and route planning.",
+        "tech": ["Vue.js", "Quasar", "Maps API"],
+        "tags": ["Vue.js", "Quasar", "Maps API"],
+        "image": "https://picsum.photos/seed/nlex1/600/400",
+        "images": [
+          "https://picsum.photos/seed/nlex1/1200/800",
+          "https://picsum.photos/seed/nlex2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "3 weeks",
+        "client": "NLEX Corporation",
+        "year": "2024",
+        "accentColor": "#667eea"
+      },
+      {
+        "id": "6",
+        "title": "UNMS Monitoring",
+        "description": "Unified Network Management System for real-time monitoring, alerting, and management of network infrastructure with interactive dashboards.",
+        "fullDescription": "Unified Network Management System for real-time monitoring, alerting, and management of network infrastructure with interactive dashboards. Advanced network monitoring capabilities.",
+        "tech": ["Vue.js", "Quasar", "Chart.js"],
+        "tags": ["Vue.js", "Quasar", "Chart.js"],
+        "image": "https://picsum.photos/seed/unms1/600/400",
+        "images": [
+          "https://picsum.photos/seed/unms1/1200/800",
+          "https://picsum.photos/seed/unms2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "8 weeks",
+        "client": "Network Solutions",
+        "year": "2024",
+        "accentColor": "#00f2fe"
+      },
+      {
+        "id": "7",
+        "title": "NHA Accounting",
+        "description": "Comprehensive accounting system for National Housing Authority with financial reporting, budget tracking, and audit capabilities.",
+        "fullDescription": "Comprehensive accounting system for National Housing Authority with financial reporting, budget tracking, and audit capabilities. Full-featured financial management system.",
+        "tech": ["Vue.js", "Quasar", "Database Integration"],
+        "tags": ["Vue.js", "Quasar", "Database Integration"],
+        "image": "https://picsum.photos/seed/nha1/600/400",
+        "images": [
+          "https://picsum.photos/seed/nha1/1200/800",
+          "https://picsum.photos/seed/nha2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "10 weeks",
+        "client": "National Housing Authority",
+        "year": "2024",
+        "accentColor": "#764ba2"
+      },
+      {
+        "id": "8",
+        "title": "DICT Speedtest",
+        "description": "Web and mobile application for internet speed testing with data collection, analytics, and regional performance comparison.",
+        "fullDescription": "Web and mobile application for internet speed testing with data collection, analytics, and regional performance comparison. Government initiative for internet infrastructure monitoring.",
+        "tech": ["Vue.js", "Quasar", "PWA", "Mobile App"],
+        "tags": ["Vue.js", "Quasar", "PWA", "Mobile App"],
+        "image": "https://picsum.photos/seed/dict1/600/400",
+        "images": [
+          "https://picsum.photos/seed/dict1/1200/800",
+          "https://picsum.photos/seed/dict2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "5 weeks",
+        "client": "Department of Information and Communications Technology",
+        "year": "2024",
+        "accentColor": "#f5576c"
+      },
+      {
+        "id": "9",
+        "title": "Cebu Monitoring",
+        "description": "Regional monitoring system for Cebu with real-time data visualization, alerts, and performance metrics tracking.",
+        "fullDescription": "Regional monitoring system for Cebu with real-time data visualization, alerts, and performance metrics tracking. Comprehensive regional data management system.",
+        "tech": ["Vue.js", "Quasar", "Real-time Data"],
+        "tags": ["Vue.js", "Quasar", "Real-time Data"],
+        "image": "https://picsum.photos/seed/cebu1/600/400",
+        "images": [
+          "https://picsum.photos/seed/cebu1/1200/800",
+          "https://picsum.photos/seed/cebu2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "6 weeks",
+        "client": "Local Government Unit",
+        "year": "2024",
+        "accentColor": "#667eea"
+      },
+      {
+        "id": "10",
+        "title": "BPLS Client Side",
+        "description": "Business Permit and Licensing System client interface with streamlined application process, status tracking, and document management.",
+        "fullDescription": "Business Permit and Licensing System client interface with streamlined application process, status tracking, and document management. Digital transformation for business licensing.",
+        "tech": ["Vue.js", "Quasar", "API Integration"],
+        "tags": ["Vue.js", "Quasar", "API Integration"],
+        "image": "https://picsum.photos/seed/bpls1/600/400",
+        "images": [
+          "https://picsum.photos/seed/bpls1/1200/800",
+          "https://picsum.photos/seed/bpls2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "7 weeks",
+        "client": "Local Government Unit",
+        "year": "2024",
+        "accentColor": "#00f2fe"
+      },
+      {
+        "id": "11",
+        "title": "BPLS Baguio & Caloocan",
+        "description": "Customized Business Permit and Licensing System for Baguio and Caloocan cities with localized requirements and workflow.",
+        "fullDescription": "Customized Business Permit and Licensing System for Baguio and Caloocan cities with localized requirements and workflow. Tailored solutions for specific city requirements.",
+        "tech": ["Vue.js", "Quasar", "Custom Workflows"],
+        "tags": ["Vue.js", "Quasar", "Custom Workflows"],
+        "image": "https://picsum.photos/seed/baguio1/600/400",
+        "images": [
+          "https://picsum.photos/seed/baguio1/1200/800",
+          "https://picsum.photos/seed/baguio2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Web Development",
+        "duration": "8 weeks",
+        "client": "City Government",
+        "year": "2024",
+        "accentColor": "#764ba2"
+      },
+      {
+        "id": "12",
+        "title": "Inspector App",
+        "description": "Mobile application for field inspectors with offline capabilities, photo documentation, form submission, and synchronization.",
+        "fullDescription": "Mobile application for field inspectors with offline capabilities, photo documentation, form submission, and synchronization. Mobile-first solution for field operations.",
+        "tech": ["Vue.js", "Quasar", "Mobile App"],
+        "tags": ["Vue.js", "Quasar", "Mobile App"],
+        "image": "https://picsum.photos/seed/inspector1/600/400",
+        "images": [
+          "https://picsum.photos/seed/inspector1/1200/800",
+          "https://picsum.photos/seed/inspector2/1200/800"
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "4 weeks",
+        "client": "Government Agency",
+        "year": "2024",
+        "accentColor": "#f5576c"
+      }
+    ]
+  },
+  "ResumeSection": {
+    "name": "ResumeSection",
+    "description": "Career timeline and education history.",
+    "experience": [
+      {
+        "position": "Web Developer / Web Designer",
+        "company": "ITBS Corporation",
+        "location": "San Fernando City, Pampanga",
+        "year": "2024",
+        "description": "Lead front-end development with Vue.js and Quasar Framework. Designed and implemented responsive, accessible web applications and optimized performance across projects.",
+        "skills": ["Vue.js", "Quasar", "JavaScript", "UI/UX", "REST API"]
+      },
+      {
+        "position": "Student Intern",
+        "company": "Kaizenaire Pte. Ltd.",
+        "location": "Siglap V, Singapore",
+        "year": "2023",
+        "description": "Gained valuable experience in web development through hands-on training and project-based learning. Collaborated with senior developers on real-world applications.",
+        "skills": ["Web Development", "HTML/CSS", "JavaScript", "Vue.js"]
+      },
+      {
+        "position": "Office Assistant",
+        "company": "Registry of Deeds",
+        "location": "Tarlac City, Philippines",
+        "year": "2020",
+        "description": "Assisted in office administration and document management. Developed organizational skills and attention to detail in a professional environment.",
+        "skills": ["Office Administration", "Documentation", "Data Entry"]
+      },
+      {
+        "position": "Office Assistant - SPES",
+        "company": "Tarlac Provincial Capitol",
+        "location": "Tarlac City, Philippines",
+        "year": "2017",
+        "description": "Participated in the Special Program for Employment of Students (SPES). Gained early professional experience in a government office setting.",
+        "skills": ["Office Work", "Filing", "Basic Computer Skills"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Tarlac State University",
+        "location": "Tarlac City, Philippines",
+        "year": "2020-2024"
+      },
+      {
+        "degree": "Senior High School - TVL (ICT)",
+        "institution": "AMA Computer College",
+        "location": "Tarlac City, Philippines",
+        "year": "2018-2020"
+      }
+    ]
+  }
+}
