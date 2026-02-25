@@ -32,10 +32,10 @@
       </transition-group>
     </div>
 
-    <ProjectModal 
-      :project="selectedProject" 
+    <ProjectModal
+      :project="selectedProject"
       :projects="filteredProjects"
-      @close="selectedProject = null" 
+      @close="selectedProject = null"
       @navigate="navigateToProject"
     />
   </section>
@@ -95,16 +95,24 @@ export default {
 
     const navigateToProject = (direction) => {
       if (!selectedProject.value || !filteredProjects.value.length) return;
-      
-      const currentIndex = filteredProjects.value.findIndex(p => p.id === selectedProject.value.id);
+
+      const currentIndex = filteredProjects.value.findIndex(
+        (p) => p.id === selectedProject.value.id
+      );
       let newIndex;
-      
-      if (direction === 'next') {
-        newIndex = currentIndex === filteredProjects.value.length - 1 ? 0 : currentIndex + 1;
+
+      if (direction === "next") {
+        newIndex =
+          currentIndex === filteredProjects.value.length - 1
+            ? 0
+            : currentIndex + 1;
       } else {
-        newIndex = currentIndex === 0 ? filteredProjects.value.length - 1 : currentIndex - 1;
+        newIndex =
+          currentIndex === 0
+            ? filteredProjects.value.length - 1
+            : currentIndex - 1;
       }
-      
+
       selectedProject.value = filteredProjects.value[newIndex];
     };
 
