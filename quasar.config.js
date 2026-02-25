@@ -17,12 +17,12 @@ module.exports = configure(function (/* ctx */) {
       vueRouterMode: "hash",
 
       vitePlugins: [
-        [
-          "@intlify/vite-plugin-vue-i18n",
-          {
-            include: [],
-          },
-        ],
+        // [
+        //   "@intlify/vite-plugin-vue-i18n",
+        //   {
+        //     include: [],
+        //   },
+        // ],
       ],
 
       env: {

@@ -7,7 +7,11 @@
     @mouseleave="handleMouseLeave"
     @click="$emit('click')"
   >
-    <img :src="project.images[0]" :alt="project.title" class="card-image" />
+    <img
+      :src="project.images[0].src || project.images[0]"
+      :alt="project.title"
+      class="card-image"
+    />
     <div class="card-overlay"></div>
 
     <div class="card-tags">
@@ -114,6 +118,11 @@ export default {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.3s, transform 0.1s ease-out;
   transform-style: preserve-3d;
+  background-color: #f8fafc;
+
+  .dark-mode & {
+    background-color: #1e293b;
+  }
 
   &:hover {
     box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.35);
@@ -147,7 +156,9 @@ export default {
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
   transition: transform 1s;
 }
 

@@ -2,19 +2,19 @@
   <section id="home" class="hero-section">
     <div class="hero-content" :style="heroStyle">
       <p class="hero-subtitle" :class="{ visible: isVisible }">
-        World-Class Product Engineer & Designer
+        Developer & UI/UX Designer
       </p>
 
       <h1 class="hero-title" :class="{ visible: isVisible }">
-        Forging Digital <br />
-        <span class="gradient-text">Elegance.</span>
+        Marion Ray <br />
+        <span class="gradient-text">Miguel. </span>
       </h1>
 
       <div class="hero-bottom">
         <p class="hero-description" :class="{ visible: isVisible }">
-          Bespoke interfaces that blend high-end aesthetics with technical
-          precision. Designing experiences that feel like craftsmanship in the
-          digital age.
+          Crafting responsive web applications with clean code and intuitive
+          design. Passionate about creating seamless user experiences through
+          modern technologies and thoughtful interface design.
         </p>
 
         <div class="hero-cta" :class="{ visible: isVisible }">
@@ -22,7 +22,7 @@
             <a href="#work" class="cta-button" @click="handleNavClick">
               <div class="cta-background"></div>
               <span class="cta-text">
-                View Selected Work
+                View My Projects
                 <span class="arrow">→</span>
               </span>
             </a>
@@ -169,6 +169,7 @@ export default {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
 }
 
 .hero-bottom {

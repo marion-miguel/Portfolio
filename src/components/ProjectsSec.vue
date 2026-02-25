@@ -32,7 +32,12 @@
       </transition-group>
     </div>
 
-    <ProjectModal :project="selectedProject" @close="selectedProject = null" />
+    <ProjectModal 
+      :project="selectedProject" 
+      :projects="filteredProjects"
+      @close="selectedProject = null" 
+      @navigate="navigateToProject"
+    />
   </section>
 </template>
 
@@ -88,6 +93,21 @@ export default {
       }
     };
 
+    const navigateToProject = (direction) => {
+      if (!selectedProject.value || !filteredProjects.value.length) return;
+      
+      const currentIndex = filteredProjects.value.findIndex(p => p.id === selectedProject.value.id);
+      let newIndex;
+      
+      if (direction === 'next') {
+        newIndex = currentIndex === filteredProjects.value.length - 1 ? 0 : currentIndex + 1;
+      } else {
+        newIndex = currentIndex === 0 ? filteredProjects.value.length - 1 : currentIndex - 1;
+      }
+      
+      selectedProject.value = filteredProjects.value[newIndex];
+    };
+
     watch(selectedProject, (newProject) => {
       if (newProject && newProject.accentColor) {
         emit("accent-change", newProject.accentColor);
@@ -119,6 +139,7 @@ export default {
       filteredProjects,
       headerVisible,
       visibleProjects,
+      navigateToProject,
     };
   },
 };

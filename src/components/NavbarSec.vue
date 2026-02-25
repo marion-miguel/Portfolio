@@ -20,6 +20,13 @@
           >
             {{ item.label }}
           </a>
+          <a
+            class="nav-link resume-link"
+            :style="{ transitionDelay: `${navItems.length * 0.1}s` }"
+            @click="openResumeModal"
+          >
+            Resume
+          </a>
         </div>
 
         <div class="nav-actions">
@@ -63,17 +70,22 @@
         </div>
       </div>
     </nav>
+
+    <!-- Resume Modal -->
+    <ResumeModal :isOpen="showResumeModal" @close="closeResumeModal" />
   </div>
 </template>
 
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
 import MagneticButton from "src/components/MagneticButton.vue";
+import ResumeModal from "src/components/ResumeModal.vue";
 
 export default {
   name: "NavbarSec",
   components: {
     MagneticButton,
+    ResumeModal,
   },
   props: {
     darkMode: {
@@ -85,6 +97,7 @@ export default {
   setup() {
     const scrolled = ref(false);
     const scrollProgress = ref(0);
+    const showResumeModal = ref(false);
 
     const navItems = [
       { label: "Home", href: "home" },
@@ -112,6 +125,15 @@ export default {
       }
     };
 
+    const openResumeModal = (e) => {
+      e.preventDefault();
+      showResumeModal.value = true;
+    };
+
+    const closeResumeModal = () => {
+      showResumeModal.value = false;
+    };
+
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
       handleScroll();
@@ -126,6 +148,9 @@ export default {
       scrollProgress,
       navItems,
       handleNavClick,
+      showResumeModal,
+      openResumeModal,
+      closeResumeModal,
     };
   },
 };
@@ -208,9 +233,14 @@ export default {
   opacity: 0;
   animation: fadeInDown 0.6s ease-out forwards;
   transition: color 0.3s;
+  cursor: pointer;
 
   &:hover {
     color: #2dd4bf;
+  }
+
+  &.resume-link {
+    cursor: pointer;
   }
 }
 

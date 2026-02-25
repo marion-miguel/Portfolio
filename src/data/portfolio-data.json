@@ -18,7 +18,7 @@
     ],
     "stats": [
       { "label": "Years Experience", "value": "1+" },
-      { "label": "Projects Completed", "value": "18+" }
+      { "label": "Projects Completed", "value": "19+" }
     ],
     "skills": {
       "development": [
@@ -73,7 +73,7 @@
     "description": "Web designer & front-end developer passionate about crafting modern, user-centered digital solutions with clean code and beautiful interfaces.",
     "stats": [
       { "label": "Years Exp.", "value": "1+" },
-      { "label": "Projects", "value": "18+" }
+      { "label": "Projects", "value": "19+" }
     ],
     "actions": [
       { "label": "View My Work", "section": "portfolio" },
@@ -91,31 +91,58 @@
         "fullDescription": "HRIS Launcher is a comprehensive Human Resource Information System with advanced features for employee management, payroll, attendance tracking, and analytics. Built with Vue.js and Quasar Framework for optimal performance.",
         "tech": ["Vue.js", "Quasar", "REST API"],
         "tags": ["Vue.js", "Quasar", "REST API"],
-        "image": "https://picsum.photos/seed/hris1/600/400",
+        "image": "/images/projects/hris_launcher/hris.jpg",
         "images": [
-          "https://picsum.photos/seed/hris1/1200/800",
-          "https://picsum.photos/seed/hris2/1200/800",
-          "https://picsum.photos/seed/hris3/1200/800"
+          {
+            "src": "/images/projects/hris_launcher/hris.jpg",
+            "description": "Main HRIS dashboard with comprehensive employee management overview and analytics"
+          },
+          {
+            "src": "/images/projects/hris_launcher/emp.jpg",
+            "description": "Employee management module with detailed personnel information and profile management"
+          },
+          {
+            "src": "/images/projects/hris_launcher/pis.jpg",
+            "description": "Personal Information System interface for employee data management"
+          },
+          {
+            "src": "/images/projects/hris_launcher/kpi.jpg",
+            "description": "Key Performance Indicators dashboard showing performance metrics and analytics"
+          },
+          {
+            "src": "/images/projects/hris_launcher/tms.jpg",
+            "description": "Time Management System for attendance tracking and schedule management"
+          }
         ],
         "liveUrl": "https://itbs.solutions",
         "codeUrl": "#",
         "category": "Web Development",
         "duration": "6 weeks",
-        "client": "ITBS Solutions",
+        "client": "Company Home Page Solutions",
         "year": "2024",
         "accentColor": "#667eea"
       },
       {
         "id": "2",
-        "title": "ITBS Solutions",
+        "title": "Company Home Page Solutions",
         "description": "Company website with interactive interface and service showcase, featuring integration with various business tools and CMS capabilities.",
-        "fullDescription": "ITBS Solutions company website with interactive interface and service showcase, featuring integration with various business tools and CMS capabilities. Modern responsive design built with Vue.js.",
+        "fullDescription": "Company Home Page Solutions company website with interactive interface and service showcase, featuring integration with various business tools and CMS capabilities. Modern responsive design built with Vue.js.",
         "tech": ["Vue.js", "Quasar", "Firebase"],
         "tags": ["Vue.js", "Quasar", "Firebase"],
-        "image": "https://picsum.photos/seed/itbs1/600/400",
+        "image": "/images/projects/itbs-solutions/itbs solutions.jpg",
         "images": [
-          "https://picsum.photos/seed/itbs1/1200/800",
-          "https://picsum.photos/seed/itbs2/1200/800"
+          {
+            "src": "/images/projects/itbs-solutions/itbs solutions.jpg",
+            "description": "Company Home Page Solutions homepage with modern design and service showcase"
+          },
+          {
+            "src": "/images/projects/itbs-solutions/itbs solutions-mobile.jpg",
+            "description": "Mobile responsive version with optimized navigation and touch-friendly interface"
+          },
+          {
+            "src": "/images/projects/itbs-solutions/itbs solutions-tablet.jpg",
+            "description": "Tablet view showcasing adaptive design across different screen sizes"
+          }
         ],
         "liveUrl": "https://itbs.solutions",
         "codeUrl": "#",
@@ -132,10 +159,12 @@
         "fullDescription": "Interactive kiosk interface designed for public spaces with touch functionality, user-friendly navigation, and information display. Optimized for public use with intuitive touch interactions.",
         "tech": ["Vue.js", "Quasar", "HTML5"],
         "tags": ["Vue.js", "Quasar", "HTML5"],
-        "image": "https://picsum.photos/seed/kiosk1/600/400",
+        "image": "/images/projects/kms/KMS.jpg",
         "images": [
-          "https://picsum.photos/seed/kiosk1/1200/800",
-          "https://picsum.photos/seed/kiosk2/1200/800"
+          {
+            "src": "/images/projects/kms/KMS.jpg",
+            "description": "Interactive kiosk interface with touch-optimized navigation for public use"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -152,10 +181,12 @@
         "fullDescription": "Modern landing page for Local Water Utilities Administration with service information, interactive elements, and responsive design. Built to showcase government services effectively.",
         "tech": ["Vue.js", "Quasar", "Responsive Design"],
         "tags": ["Vue.js", "Quasar", "Responsive Design"],
-        "image": "https://picsum.photos/seed/lwua1/600/400",
+        "image": "/images/projects/lwua/LWUA.jpg",
         "images": [
-          "https://picsum.photos/seed/lwua1/1200/800",
-          "https://picsum.photos/seed/lwua2/1200/800"
+          {
+            "src": "/images/projects/lwua/LWUA.jpg",
+            "description": "LWUA landing page with service information and responsive government design"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -167,35 +198,29 @@
       },
       {
         "id": "5",
-        "title": "NLEX Landing Page",
-        "description": "High-performance landing page for North Luzon Expressway with traffic updates, toll information, and interactive map integration.",
-        "fullDescription": "High-performance landing page for North Luzon Expressway with traffic updates, toll information, and interactive map integration. Features real-time traffic data and route planning.",
-        "tech": ["Vue.js", "Quasar", "Maps API"],
-        "tags": ["Vue.js", "Quasar", "Maps API"],
-        "image": "https://picsum.photos/seed/nlex1/600/400",
-        "images": [
-          "https://picsum.photos/seed/nlex1/1200/800",
-          "https://picsum.photos/seed/nlex2/1200/800"
-        ],
-        "liveUrl": "#",
-        "codeUrl": "#",
-        "category": "Web Development",
-        "duration": "3 weeks",
-        "client": "NLEX Corporation",
-        "year": "2024",
-        "accentColor": "#667eea"
-      },
-      {
-        "id": "6",
         "title": "UNMS Monitoring",
         "description": "Unified Network Management System for real-time monitoring, alerting, and management of network infrastructure with interactive dashboards.",
         "fullDescription": "Unified Network Management System for real-time monitoring, alerting, and management of network infrastructure with interactive dashboards. Advanced network monitoring capabilities.",
         "tech": ["Vue.js", "Quasar", "Chart.js"],
         "tags": ["Vue.js", "Quasar", "Chart.js"],
-        "image": "https://picsum.photos/seed/unms1/600/400",
+        "image": "/images/projects/IMAP/IMAP.jpg",
         "images": [
-          "https://picsum.photos/seed/unms1/1200/800",
-          "https://picsum.photos/seed/unms2/1200/800"
+          {
+            "src": "/images/projects/IMAP/IMAP.jpg",
+            "description": "Main UNMS dashboard with network infrastructure overview and status monitoring"
+          },
+          {
+            "src": "/images/projects/IMAP/Infrastructure Monitoring.jpg",
+            "description": "Infrastructure monitoring panel showing real-time network performance metrics"
+          },
+          {
+            "src": "/images/projects/IMAP/Live Feed.jpg",
+            "description": "Live feed interface displaying real-time network events and alerts"
+          },
+          {
+            "src": "/images/projects/IMAP/Status Sites.jpg",
+            "description": "Site status overview with monitoring points and connectivity status"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -206,36 +231,64 @@
         "accentColor": "#00f2fe"
       },
       {
-        "id": "7",
-        "title": "NHA Accounting",
-        "description": "Comprehensive accounting system for National Housing Authority with financial reporting, budget tracking, and audit capabilities.",
-        "fullDescription": "Comprehensive accounting system for National Housing Authority with financial reporting, budget tracking, and audit capabilities. Full-featured financial management system.",
+        "id": "6",
+        "title": "Highway Safety System",
+        "description": "Comprehensive highway safety monitoring system with real-time traffic surveillance, incident detection, and emergency response coordination.",
+        "fullDescription": "Comprehensive highway safety monitoring system featuring real-time traffic surveillance, incident detection, emergency response coordination, and safety analytics. Advanced infrastructure monitoring for highway safety management.",
         "tech": ["Vue.js", "Quasar", "Database Integration"],
         "tags": ["Vue.js", "Quasar", "Database Integration"],
-        "image": "https://picsum.photos/seed/nha1/600/400",
+        "image": "/images/projects/nlex/HSS.jpg",
         "images": [
-          "https://picsum.photos/seed/nha1/1200/800",
-          "https://picsum.photos/seed/nha2/1200/800"
+          {
+            "src": "/images/projects/nlex/HSS.jpg",
+            "description": "Highway Safety System main dashboard with traffic monitoring and incident overview"
+          },
+          {
+            "src": "/images/projects/afims_launcher/accounting.jpg",
+            "description": "Safety analytics module with incident tracking and reporting features"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
         "category": "Others",
         "duration": "10 weeks",
-        "client": "National Housing Authority",
+        "client": "Highway Authority",
         "year": "2024",
         "accentColor": "#764ba2"
       },
       {
-        "id": "8",
-        "title": "DICT Speedtest",
+        "id": "7",
+        "title": "Speedtest",
         "description": "Web and mobile application for internet speed testing with data collection, analytics, and regional performance comparison.",
         "fullDescription": "Web and mobile application for internet speed testing with data collection, analytics, and regional performance comparison. Government initiative for internet infrastructure monitoring.",
         "tech": ["Vue.js", "Quasar", "PWA", "Mobile App"],
         "tags": ["Vue.js", "Quasar", "PWA", "Mobile App"],
-        "image": "https://picsum.photos/seed/dict1/600/400",
+        "image": "/images/projects/speedtest/speedtest.jpg",
         "images": [
-          "https://picsum.photos/seed/dict1/1200/800",
-          "https://picsum.photos/seed/dict2/1200/800"
+          {
+            "src": "/images/projects/speedtest/speedtest.jpg",
+            "description": "Speedtest main interface with download and upload testing capabilities"
+          },
+          {
+            "src": "/images/projects/speedtest/speedtest app.jpg",
+            "description": "Mobile app version with native performance testing features"
+          },
+          {
+            "src": "/images/projects/speedtest/speedtest-testing.jpg",
+            "description": "Active speed testing in progress showing real-time measurements"
+          },
+          {
+            "src": "/images/projects/speedtest/speedtest-result.jpg",
+            "description": "Detailed test results with comprehensive network performance metrics"
+          },
+          {
+            "src": "/images/projects/speedtest/speedtest-upload.jpg",
+            "description": "Upload speed testing interface with progress indicators"
+          },
+          {
+            "src": "/images/projects/speedtest/speedtest-installer.jpg",
+            "description": "Application installer with setup instructions and requirements"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -246,36 +299,26 @@
         "accentColor": "#f5576c"
       },
       {
-        "id": "9",
-        "title": "Cebu Monitoring",
-        "description": "Regional monitoring system for Cebu with real-time data visualization, alerts, and performance metrics tracking.",
-        "fullDescription": "Regional monitoring system for Cebu with real-time data visualization, alerts, and performance metrics tracking. Comprehensive regional data management system.",
-        "tech": ["Vue.js", "Quasar", "Real-time Data"],
-        "tags": ["Vue.js", "Quasar", "Real-time Data"],
-        "image": "https://picsum.photos/seed/cebu1/600/400",
-        "images": [
-          "https://picsum.photos/seed/cebu1/1200/800",
-          "https://picsum.photos/seed/cebu2/1200/800"
-        ],
-        "liveUrl": "#",
-        "codeUrl": "#",
-        "category": "Others",
-        "duration": "6 weeks",
-        "client": "Local Government Unit",
-        "year": "2024",
-        "accentColor": "#667eea"
-      },
-      {
-        "id": "10",
-        "title": "BPLS Client Side",
-        "description": "Business Permit and Licensing System client interface with streamlined application process, status tracking, and document management.",
-        "fullDescription": "Business Permit and Licensing System client interface with streamlined application process, status tracking, and document management. Digital transformation for business licensing.",
+        "id": "8",
+        "title": "Admin System Landing Page",
+        "description": "Comprehensive admin system landing page with centralized dashboard access, module navigation, and system management interface.",
+        "fullDescription": "Comprehensive admin system landing page featuring centralized dashboard access, intuitive module navigation, and unified system management interface. Streamlined administrative portal for efficient operations.",
         "tech": ["Vue.js", "Quasar", "API Integration"],
         "tags": ["Vue.js", "Quasar", "API Integration"],
-        "image": "https://picsum.photos/seed/bpls1/600/400",
+        "image": "/images/projects/afims_launcher/afims_launcher.jpg",
         "images": [
-          "https://picsum.photos/seed/bpls1/1200/800",
-          "https://picsum.photos/seed/bpls2/1200/800"
+          {
+            "src": "/images/projects/afims_launcher/afims_launcher.jpg",
+            "description": "Admin system main landing page with centralized module access and navigation"
+          },
+          {
+            "src": "/images/projects/afims_launcher/Procurement Asset Management.jpg",
+            "description": "Procurement and asset management module accessible from admin portal"
+          },
+          {
+            "src": "/images/projects/afims_launcher/Project Management System.jpg",
+            "description": "Project management system integration within the admin landing page"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -286,36 +329,38 @@
         "accentColor": "#00f2fe"
       },
       {
-        "id": "11",
-        "title": "BPLS Baguio & Caloocan",
-        "description": "Customized Business Permit and Licensing System for Baguio and Caloocan cities with localized requirements and workflow.",
-        "fullDescription": "Customized Business Permit and Licensing System for Baguio and Caloocan cities with localized requirements and workflow. Tailored solutions for specific city requirements.",
-        "tech": ["Vue.js", "Quasar", "Custom Workflows"],
-        "tags": ["Vue.js", "Quasar", "Custom Workflows"],
-        "image": "https://picsum.photos/seed/baguio1/600/400",
-        "images": [
-          "https://picsum.photos/seed/baguio1/1200/800",
-          "https://picsum.photos/seed/baguio2/1200/800"
-        ],
-        "liveUrl": "#",
-        "codeUrl": "#",
-        "category": "Web Development",
-        "duration": "8 weeks",
-        "client": "City Government",
-        "year": "2024",
-        "accentColor": "#764ba2"
-      },
-      {
-        "id": "12",
+        "id": "9",
         "title": "Inspector App",
         "description": "Mobile application for field inspectors with offline capabilities, photo documentation, form submission, and synchronization.",
         "fullDescription": "Mobile application for field inspectors with offline capabilities, photo documentation, form submission, and synchronization. Mobile-first solution for field operations.",
         "tech": ["Vue.js", "Quasar", "Mobile App"],
         "tags": ["Vue.js", "Quasar", "Mobile App"],
-        "image": "https://picsum.photos/seed/inspector1/600/400",
+        "image": "/images/projects/inspector/dashboard.jpg",
         "images": [
-          "https://picsum.photos/seed/inspector1/1200/800",
-          "https://picsum.photos/seed/inspector2/1200/800"
+          {
+            "src": "/images/projects/inspector/dashboard.jpg",
+            "description": "Inspector app dashboard with inspection overview and task management"
+          },
+          {
+            "src": "/images/projects/inspector/qr-scanner-home.jpg",
+            "description": "QR Scanner home interface for quick inspection access"
+          },
+          {
+            "src": "/images/projects/inspector/qr-scanner.jpg",
+            "description": "Active QR code scanning functionality for location verification"
+          },
+          {
+            "src": "/images/projects/inspector/list of inspection.jpg",
+            "description": "Comprehensive list of inspections with status tracking and filtering"
+          },
+          {
+            "src": "/images/projects/inspector/image-upload.jpg",
+            "description": "Photo documentation feature for field inspection evidence"
+          },
+          {
+            "src": "/images/projects/inspector/profile.jpg",
+            "description": "User profile management with inspector credentials and settings"
+          }
         ],
         "liveUrl": "#",
         "codeUrl": "#",
@@ -324,6 +369,184 @@
         "client": "Government Agency",
         "year": "2024",
         "accentColor": "#f5576c"
+      },
+      {
+        "id": "10",
+        "title": "Land Transportation Office",
+        "description": "Mobile application for transportation services with vehicle registration, license renewal, and monitoring capabilities.",
+        "fullDescription": "Mobile application for transportation services with vehicle registration, license renewal, and monitoring capabilities. Digital solution for government transportation services.",
+        "tech": ["Vue.js", "Quasar", "Mobile App"],
+        "tags": ["Vue.js", "Quasar", "Mobile App"],
+        "image": "/images/projects/lto/lto.jpg",
+        "images": [
+          {
+            "src": "/images/projects/lto/lto.jpg",
+            "description": "LTO mobile app interface for vehicle registration and license management"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "4 weeks",
+        "client": "Government Agency",
+        "year": "2024",
+        "accentColor": "#f5576c"
+      },
+      {
+        "id": "11",
+        "title": "Boat Monitoring System",
+        "description": "Real-time boat tracking and monitoring system with GPS location tracking, zone management, and incident reporting capabilities.",
+        "fullDescription": "Comprehensive boat monitoring system with real-time GPS tracking, vessel monitoring, restricted zone management, and incident reporting. Advanced maritime surveillance solution.",
+        "tech": ["Vue.js", "Quasar", "GPS Tracking", "Real-time"],
+        "tags": ["Vue.js", "Quasar", "GPS Tracking", "Real-time"],
+        "image": "/images/projects/boat monitoring system/MISS.jpg",
+        "images": [
+          {
+            "src": "/images/projects/boat monitoring system/MISS.jpg",
+            "description": "Maritime Information Surveillance System main interface with vessel overview"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/boat tracking.jpg",
+            "description": "Real-time boat tracking interface showing vessel locations and routes"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/boat location tracking.jpg",
+            "description": "Detailed location tracking with GPS coordinates and navigation data"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/vessel tracking.jpeg",
+            "description": "Comprehensive vessel tracking dashboard with fleet management capabilities"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/creating zone.jpg",
+            "description": "Zone creation interface for defining monitoring and restricted areas"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/restricted zone.jpg",
+            "description": "Restricted zone management with alert settings and boundary definitions"
+          },
+          {
+            "src": "/images/projects/boat monitoring system/incident report.jpg",
+            "description": "Incident reporting system for maritime events and security alerts"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "Others",
+        "duration": "6 weeks",
+        "client": "Maritime Agency",
+        "year": "2024",
+        "accentColor": "#00c9ff"
+      },
+      {
+        "id": "12",
+        "title": "Chic Trend Clothing Co.",
+        "description": "Modern e-commerce fashion website with product showcase, shopping cart, category navigation, and user testimonials.",
+        "fullDescription": "Modern e-commerce fashion website featuring curated clothing collections, category-based navigation, fashion community integration, and responsive design. Elevate your wardrobe with trendy styles and seamless shopping experience.",
+        "tech": ["Figma", "UI/UX Design", "E-commerce"],
+        "tags": ["Figma", "UI/UX Design", "E-commerce"],
+        "image": "/images/projects/figma/Chic Trend Clothing Co..jpg",
+        "images": [
+          {
+            "src": "/images/projects/figma/Chic Trend Clothing Co..jpg",
+            "description": "Chic Trend Clothing Co. landing page with fashion collections and category showcase"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "1 week",
+        "client": "Concept Design",
+        "year": "2024",
+        "accentColor": "#22c55e"
+      },
+      {
+        "id": "13",
+        "title": "Financial Management System",
+        "description": "Comprehensive financial management platform with fund tracking, budget allocation, payroll management, and detailed reporting.",
+        "fullDescription": "Comprehensive financial management platform featuring fund management, budget tracking, payroll solutions, treasury operations, and comprehensive reporting. Streamlined operations for modern enterprise financial management.",
+        "tech": ["Figma", "UI/UX Design", "Dashboard"],
+        "tags": ["Figma", "UI/UX Design", "Dashboard"],
+        "image": "/images/projects/figma/Financial Management System.jpg",
+        "images": [
+          {
+            "src": "/images/projects/figma/Financial Management System.jpg",
+            "description": "Financial Management System dashboard with fund management and reporting features"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "1 week",
+        "client": "Concept Design",
+        "year": "2024",
+        "accentColor": "#d4a574"
+      },
+      {
+        "id": "14",
+        "title": "FinWise Financial Companion",
+        "description": "Smart financial mobile app for young professionals with budgeting tools, money transfers, card management, and spending analytics.",
+        "fullDescription": "Smart financial mobile app designed for young professionals featuring instant money transfers, budgeting tools, card management, and spending analytics. Empower your financial journey with cutting-edge fintech features.",
+        "tech": ["Figma", "UI/UX Design", "Mobile App"],
+        "tags": ["Figma", "UI/UX Design", "Mobile App"],
+        "image": "/images/projects/figma/FinWise_ Your Smart Financial Companion.jpg",
+        "images": [
+          {
+            "src": "/images/projects/figma/FinWise_ Your Smart Financial Companion.jpg",
+            "description": "FinWise mobile app interface with financial management and budgeting features"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "1 week",
+        "client": "Concept Design",
+        "year": "2024",
+        "accentColor": "#22c55e"
+      },
+      {
+        "id": "15",
+        "title": "Land Transportation Office Portal",
+        "description": "Government transportation services portal with vehicle registration, license renewal, plate registration, and digital document management.",
+        "fullDescription": "Digital government portal for Land Transportation Office services featuring vehicle registration, driver's license processing, plate registration, and real-time application tracking. Transform your transportation experience with modern digital services.",
+        "tech": ["Figma", "UI/UX Design", "Government Portal"],
+        "tags": ["Figma", "UI/UX Design", "Government Portal"],
+        "image": "/images/projects/figma/Land Transportation Office.jpg",
+        "images": [
+          {
+            "src": "/images/projects/figma/Land Transportation Office.jpg",
+            "description": "LTO portal landing page with transportation services and digital registration features"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "1 week",
+        "client": "Concept Design",
+        "year": "2024",
+        "accentColor": "#f472b6"
+      },
+      {
+        "id": "16",
+        "title": "Tasty Bites Delivery Service",
+        "description": "Food delivery mobile app with restaurant discovery, real-time order tracking, cuisine categories, and user reviews.",
+        "fullDescription": "Food delivery mobile app featuring restaurant discovery, real-time order tracking, diverse cuisine categories, and customer reviews. Satisfy your cravings with easy ordering and quick delivery from local restaurants.",
+        "tech": ["Figma", "UI/UX Design", "Mobile App"],
+        "tags": ["Figma", "UI/UX Design", "Mobile App"],
+        "image": "/images/projects/figma/Tasty Bites Delivery Service.jpg",
+        "images": [
+          {
+            "src": "/images/projects/figma/Tasty Bites Delivery Service.jpg",
+            "description": "Tasty Bites food delivery app with restaurant listings and order tracking"
+          }
+        ],
+        "liveUrl": "#",
+        "codeUrl": "#",
+        "category": "UI/UX",
+        "duration": "1 week",
+        "client": "Concept Design",
+        "year": "2024",
+        "accentColor": "#22c55e"
       }
     ]
   },
